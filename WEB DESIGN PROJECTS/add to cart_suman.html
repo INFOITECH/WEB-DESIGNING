@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery Shop</title>
+  <style>
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Suman Grocery Shop</h1>
+
+  <div class="item">
+    <h3>Apple</h3>
+    <p>Price: $1.50</p>
+    <button onclick="addToCart('Apple', 1.50)">Add to Cart</button>
+  </div>
+
+  <div class="item">
+    <h3>Banana</h3>
+    <p>Price: $0.50</p>
+    <button onclick="addToCart('Banana', 0.50)">Add to Cart</button>
+  </div>
+
+  <h2>Cart</h2>
+  <ul id="cart">
+  </ul>
+
+  <p>Total Price: $<span id="total-price">0.00</span></p>
+
+  <script>
+    let cart = [];
+    let totalPrice1 = 0;
+
+    function addToCart(item, price) {
+
+      cart.push({ item, price });
+
+      totalPrice1 += price;
+
+      const a = document.getElementById('cart');
+
+      const totalPrice = document.getElementById('total-price');
+      
+      a.innerHTML = '';
+
+      totalPrice.textContent = totalPrice1.toFixed(2);
+    }
+
+    // function updateCart() {
+        // SAME AS ABOVE CODE
+    //   const a = document.getElementById('cart');
+    //   const totalPrice = document.getElementById('total-price');
+      
+    //   a.innerHTML = '';
+
+    //   totalPrice.textContent = totalPrice1.toFixed(2);
+      
+      
+    //   cart.forEach(item => {
+    //     const cartItem = document.createElement('li');
+    //     cartItem.textContent = `${item.item} - $${item.price.toFixed(2)}`;
+    //     a.appendChild(cartItem);
+    //   });
+      
+    
+    //}
+  </script>
+</body>
+</html>

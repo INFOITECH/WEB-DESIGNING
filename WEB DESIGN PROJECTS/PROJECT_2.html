@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_2</title>
+    <style>
+        #img{
+            position: relative;
+            left: 20px;
+        }
+
+        #img:active{
+            background-color:red;
+        }
+         #img:hover{
+            background-color:blue;
+        }
+
+        #p::first-letter{
+
+            font-size: 2em;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Hello Tech World!!!</h2>
+    <br>
+    <h2>Hello Tech</h2>
+    <br>
+    <p>Click here the link to <a href="mailto:atchayasai@gmail.com">mail!!!</a></p>
+    <br>
+    <dl>
+        <h3>Description of Technology:</h3>
+        <dt><strong>Tech A.i:</strong></dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem iste asperiores saepe facere. Consequuntur necessitatibus quas praesentium omnis non dolor libero atque consequatur tempore. Quo consequatur eaque voluptatibus tenetur!</dd>
+        <dt><strong>Tech GPT:</strong></dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt culpa perferendis ut voluptate quod suscipit, ex quisquam quo. Molestias quia voluptas neque consectetur adipisci magni ratione delectus autem sunt fugiat.</dd>
+    </dl>
+<p>Click here the Description:</p>
+<a href="../index.html#p11">Webpage</a>
+<br>
+<img src="IMAGES/restbg.jpg" height="200px" width="250px" alt="wallpaper" title="wallpaper1">
+<figcaption>wallpaper Images at about description</figcaption>
+<br>
+<table border="2" style="color: blue;" cellspacing="5">
+    <thead>
+        <tr>
+            <th>Data:</th>
+            <th>Companies</th>
+            <th>Programming</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Atchaya infoitech</td>
+            <td>Google</td>
+            <td>Meta</td>
+        </tr>
+        <tr>
+            <td>Instagram</td>
+            <td>Google Cloud</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Telagram</td>
+            <td>Whatsapp</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<form action="">
+    <label for="name">User Name</label>
+    <input type="text" id="name" id="name" placeholder="Enter Your Name">
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password" placeholder="Enter Your Password">
+    <input type="submit" value="Click me!!!"> 
+    <br>
+    <input type="datetime-local">
+    <br>
+    <textarea placeholder="Enter Your Feedback!!!"></textarea>
+    <br>
+    <input type="image" src="../MODEL_1/IMAGES/favicon.ico" alt="images" height="70px" id="img">
+</form>
+<br>
+<form>
+<input type="range" max="50" step="10">
+<br>
+<label for="search">Enter Search Here!!!</label>
+<input type="search" id="search"><br>
+<label>Enter Your Mobile Number:</label>
+<input type="tel" placeholder="+91-123456789" pattern="[6-9]{1}[0-9]{9}">
+<br>
+<label for="cars">Choose Your Car:</label>
+<select name="cars" id="cars">
+    <option value="lamborghini">Lamborghini</option>
+    <option value="ferrary">ferrary</option>
+    <option value="Msbenz">Msbenz</option>
+    <option value="EB">EB</option>
+    <option value="Mclaren">Mclaren</option>
+</select>
+<input type="submit" value="submit">
+</form>
+
+<p>You can contact me us!!!<a href="+917708774681">Contact me!!!</a></p>
+<br>
+<form>
+    <address>
+    <fieldset style="background-color: red; border: 4px solid blue;">
+    <legend>Address</legend>
+    <input type="text" name="street" value="21st, tech street"><br>
+    <input type="text" name="city" value="india"><br>
+<input type="text" value="tamilnadu"><br>
+    <input type="submit" value="Click me!!!">
+    </fieldset>
+    </address>
+</form>
+<br>
+
+<iframe src="IMAGES/d.png" name="tech" title="tech world"></iframe>
+<p><a href="../index.html" target="tech">google</a></p>
+<br>
+<p id="p" style="text-shadow: 3px 2px 3px black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloribus voluptates nemo blanditiis quidem rerum amet, pariatur quos architecto iusto inventore explicabo, laboriosam enim excepturi ipsam soluta dicta vero sint?</p>
+<br>
+
+<input type="text" id="inp" placeholder="length in CM">
+<div>
+<button type="submit" onclick="convert()">Convert to inches</button>
+</div>
+<div id="submit">
+</div>
+
+<script>
+function convert(){
+    const cmVal=Number(document.getElementById("inp").value)
+    const inVal=cmVal/2.54
+    const result=document.getElementById("submit")
+    result.innerHTML=inVal.toFixed(3)+"inches"
+}    
+</script>
+
+<br>
+<input type="number" id="celcius" placeholder="Enter a Celcius value">
+<button type="submit" onclick="cetofe()">Submit</button>
+<div id="ce"></div>
+<script>
+    function cetofe(){
+    const a1=Number(document.getElementById("celcius").value)
+    const b1=(1.8*a1)+32
+    const c1=document.getElementById("ce")
+    c1.innerHTML=b1
+    }
+</script>
+<br>
+<input type="number" id="fahrenheit" placeholder="Enter a fahrenheit value">
+<button type="submit" onclick="fetoce()">Submit</button>
+<div id="fe"></div>
+<script>
+    function fetoce(){
+    const a2=Number(document.getElementById("fahrenheit").value)
+    const b2=(a2-32)*5/9
+    const c2=document.getElementById("fe")
+    c2.innerHTML=b2
+    }
+</script>
+
+<br>
+<input type="number" id="inches" placeholder="Enter a Inches value">
+<button type="submit" onclick="fetoce()">Submit</button>
+<div id="in"></div>
+
+<br>
+<button type="submit" onclick="sai()">click</button>
+<div id="sai"></div>
+<script>
+    function fetoce(){
+    const a2=Number(document.getElementById("inches").value)
+    const b2=a2*2.54
+    const c2=document.getElementById("in")
+    c2.innerHTML=b2
+    }
+function sai(){
+    let x="sai"
+    let y=Math.floor(Math.random()*3)
+    let z=document.getElementById("sai")
+    z.innerHTML=x[y]
+}
+</script>
+<textarea id="textarea" placeholder="Enter Your Text"></textarea><br>
+<button type="submit" onclick="calculate()">Calculate</button>
+<div id="textar"></div>
+<script>
+    function calculate(){
+        const text=document.getElementById("textarea").value
+        const length=text.length
+        const display=document.getElementById("textar")
+        display.innerHTML=length+" words "+ typeof(text)
+    }
+</script>
+<br>
+<textarea id="text_1" placeholder="Enter Your Text"></textarea><br>
+<button type="submit" onclick="palindrome()">Submit</button>
+<div id="sai_1"></div>
+<script>
+    function palindrome(){
+        let values
+        const text=document.getElementById("text_1").value
+        const arrayavalues=text.split('')
+        const reversearray=arrayavalues.reverse()
+        const reverstring=reversearray.join('')
+        if(text==reverstring){
+            values="Palindrome"
+        }
+        else{
+            values="Not a palindroime"
+        }
+
+        const d_1=document.getElementById("sai_1")
+        d_1.innerHTML=values
+    }
+</script>
+<br>
+<input type="number" id="a_1" placeholder="Enter Your units"><br>
+<button type="submit" onclick="Rupees()">Bill Amount</button>
+<div id="s_1"></div>
+<script>
+    function Rupees(){
+        let bill
+        const t=document.getElementById("a_1").value
+        if(t>0 && t<100){
+            if(t<=50){
+                bill=50*0.75
+            }
+            else{
+                let as=50*0.75
+                let sa=t-50
+                bill=as+sa
+            }
+        }
+        else if(t>=100 && t<200){
+            bill=100*1.00
+        }
+        
+        else if(t>=200 && t<250){
+            bill=200*1.30
+        }
+        
+        else if(t>=250){
+            bill=250*1.50
+        }
+        else{
+            bill="Enter the Correct Value"
+        }
+        const d=document.getElementById("s_1")
+        d.innerHTML="Rs."+bill
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+:root{
+    --red:crimson;
+    --green:green;
+    --yellow:yellow;
+    --white:whitesmoke;
+}
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainarea{
+    background-image: url('../IMAGES/restbg.jpg');
+    color: aliceblue;
+     background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header a{
+    color:var(--yellow);
+    text-decoration: none;
+    display: inline;
+    min-width: 120px;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+
+.logo{
+    flex: 3;
+    font-size: 1.25em;
+    color: var(--yellow);
+    min-width: 260px;
+}
+
+header h2, nav a{
+    margin-right: .5em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color:var(--red);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+
+.tagline1{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: var(--red);
+}
+
+.tagline2{
+    color: var(--yellow);
+}
+
+
+.mainarea button{
+    width:20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    color:var(--white);
+    background-color:var(--green);
+}
+
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    font-size:2.5em;
+    color:var(--red);
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+}
+
+.maincourse{
+    grid-row: span 2; /**/
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+    color:var(--white);
+}
+
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;/**/
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+
+.locations address{
+    color: red;
+}
+
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    background:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52))
+}
+
+.locheading{
+    font-size: 1.75em;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.locations div{
+    padding: 1em;
+    flex:1;
+}
+
+.locations div h2{
+    color: var(--green);
+    margin-bottom:.8em;
+}
+
+footer{
+    background-color: rgb(55,55,55);
+color:var(--white);
+padding: .25em 1em;
+}
+
+
+#copyright{
+margin-left: 2px;
+}
+
+
